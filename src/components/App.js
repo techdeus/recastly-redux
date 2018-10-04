@@ -12,7 +12,7 @@ import store from '../store/store.js';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-
+    console.log(props)
     this.state = {
       videos: [],
       currentVideo: null
@@ -44,6 +44,7 @@ export default class App extends React.Component {
   //TODO: swap out the React components below for the container components
   //  you wrote in the 'containers' directory.
   render() {
+    
     return (
       <div>
         <Nav handleSearchInputChange={this.getYouTubeVideos.bind(this)}/>
